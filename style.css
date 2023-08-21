@@ -68,6 +68,7 @@ input[type=button] {
     margin: 50px 500px;
     border-radius: 40px;
     padding: 20px;
+    display: none;
     
   }
   .success button{
@@ -83,4 +84,8 @@ input[type=button] {
   }
   .success button:hover{
     background-image: linear-gradient(to right, hsl(4, 100%, 67%) , rgb(255, 0, 140));
+  }
+  #error{
+    color: red;
+    display: none;
   }

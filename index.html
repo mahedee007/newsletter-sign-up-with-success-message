@@ -20,7 +20,7 @@
  
   <!-- Sign-up form start -->
   <main>
-    <div class="newsletter-form">
+    <div id="sign-up" class="newsletter-form">
       <div class="header">
         <h1> Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
@@ -29,7 +29,7 @@
         <p><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg> And much more!</p>
   
         <form>
-          <label for="email-address">Email address</label> <br>
+          <label for="email-address">Email address</label> <label id="error" for="valid email required">valid email required</label> <br>
           <input type="email" id="email" name="email" placeholder="email@company.com">
           <input type="button" id="submit-btn" value="Subscribe to monthly newsletter">
         </form>
@@ -55,10 +55,10 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-  <div class="success">
+  <div id="success" class="success">
     <img src="assets/images/icon-success.svg" alt="">
     <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to ash@loremcompany.com. 
+    <p>A confirmation email has been sent to ${user.email} 
       Please open it and click the button inside to confirm your subscription.</p>
       <button>Dismiss message</button>
   </div>
