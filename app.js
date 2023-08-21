@@ -21,3 +21,9 @@ document.getElementById('submit-btn').addEventListener('click', function(){
       }
     
 })
+document.getElementById("dismiss").addEventListener("click", function(){
+    const signUp = document.getElementById('sign-up');
+    const div = document.getElementById('success');
+    signUp.style.display = 'block';
+    div.style.display = 'none';
+})
